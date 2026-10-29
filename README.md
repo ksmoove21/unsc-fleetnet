@@ -17,9 +17,22 @@ Checked October 29, 2026. Registry assignment, contractual usage rights, routing
 | Prefix | Current authoritative registry evidence | Evidence boundary |
 | --- | --- | --- |
 | `2a06:9801:15d0::/44` | RIPE exact-prefix record: `UNSC-NET-44`, status `ASSIGNED`, organization `ORG-KP140-RIPE` (Kendall Powell), administrative/technical contact `KP5583-RIPE`, maintained by `LAGRANGE-AUTO-MNT`. Created 2026-10-26 16:16:42 UTC; last modified 2026-10-27 03:24:14 UTC. | Confirms registered assignment to the operator's organization under Lagrange's parent allocation. Does not establish a transfer of the parent allocation or independent property ownership. |
-| `104.128.232.0/24` | ARIN exact-prefix record: `NET-104-128-232-0-1`, name `OVH-2`, active `ASSIGNMENT`, registrant CloudWish LLC (`CL-2297`). Parent `104.128.224.0/20`: `HOSTUS-IPV4-2`. | Operator confirmed on October 29, 2026 that UNSC leases this /24 through HostUS. This is operator-confirmed use, not independently verified contractual evidence or ownership. ARIN continues to identify CloudWish LLC as the exact-prefix registrant; the relationship between HostUS and that registration has not been independently established. |
+| `104.128.232.0/24` | ARIN exact-prefix record: `NET-104-128-232-0-1`, name `OVH-2`, active `ASSIGNMENT`, registrant CloudWish LLC (`CL-2297`). Parent `104.128.224.0/20`: `HOSTUS-IPV4-2`. | Operator confirms a HostUS lease. A supplied HostUS Solutions LLC LOA dated October 28, 2026 explicitly authorizes Kendall Powell to announce this /24 via AS218293 and related peers, customers and upstreams. Announcement authorization is now document-supported; lease terms and title are not established by the LOA. ARIN lists CloudWish LLC as the exact-prefix registrant; the HostUS/CloudWish registration relationship remains unreconciled. |
 
 The /44 covers `2a06:9801:15d0::` through `2a06:9801:15df:ffff:ffff:ffff:ffff:ffff` (16 /48s). It does not contain the previously documented `2a06:9801:15c1::/48`; no replacement or surrender is inferred.
+
+### Supplied authorization evidence
+
+Reviewed October 29, 2026. Provider documents supplied by the operator support announcement authorization as follows; issuer authenticity and revocation status were not independently checked. The private documents are not published here.
+
+| Prefix | Issuer | LOA date | Authorized origin |
+| --- | --- | --- | --- |
+| `104.128.232.0/24` | HostUS Solutions LLC | October 28, 2026 | AS218293 |
+| `2602:fed2:719c::/48` | Free Range Cloud Ltd. | October 24, 2026 | AS218293 |
+| `2a06:9801:15c1::/48` | Lagrange Cloud | October 23, 2026 | AS218293 |
+| `2a06:9801:15d0::/44` | Lagrange Cloud | October 26, 2026 | AS218293 |
+
+The IPv6 letters state that authorization continues until revoked or modified in writing. These documents establish documentary authorization, not proof of current BGP propagation, legal ownership, or geofeed registration.
 
 ### Format and delivery
 
@@ -33,7 +46,7 @@ The /44 covers `2a06:9801:15d0::` through `2a06:9801:15df:ffff:ffff:ffff:ffff:ff
 
 No geofeed URL was present in the exact-prefix RIPE inet6num record or ARIN RDAP network record during this audit. The inspected RIPE /29 parent and ARIN /20 parent also contained no geofeed reference. A working public URL alone does not establish registry-based discovery or geolocation-provider ingestion. This audit does not claim an exhaustive search of every possible less-specific record or third-party feed index.
 
-The relevant authorized maintainer should publish the consumer URL in the RIPE /44's `geofeed:` attribute. For IPv4, obtain supporting delegation evidence from HostUS and confirm which authorized holder can arrange an appropriate registry geofeed reference using the registry's supported mechanism. These registry changes have not been performed or verified.
+The relevant authorized maintainer should publish the consumer URL in the RIPE /44's `geofeed:` attribute. For IPv4, announcement authorization is supported by the HostUS LOA; confirm with HostUS which authorized maintainer can arrange the registry geofeed reference. The LOA does not itself register or authorize editing a registry object. These registry changes have not been performed or verified.
 
 No prefix or geographic data was changed: no substantiated CSV error was found. No BGP advertisements, ROAs, IRR route objects, or operational configurations were modified.
 
