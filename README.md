@@ -17,7 +17,7 @@ Checked October 29, 2026. Registry assignment, contractual usage rights, routing
 | Prefix | Current authoritative registry evidence | Evidence boundary |
 | --- | --- | --- |
 | `2a06:9801:15d0::/44` | RIPE exact-prefix record: `UNSC-NET-44`, status `ASSIGNED`, organization `ORG-KP140-RIPE` (Kendall Powell), administrative/technical contact `KP5583-RIPE`, maintained by `LAGRANGE-AUTO-MNT`. Created 2026-10-26 16:16:42 UTC; last modified 2026-10-27 03:24:14 UTC. | Confirms registered assignment to the operator's organization under Lagrange's parent allocation. Does not establish a transfer of the parent allocation or independent property ownership. |
-| `104.128.232.0/24` | ARIN exact-prefix record: `NET-104-128-232-0-1`, name `OVH-2`, active `ASSIGNMENT`, registrant CloudWish LLC (`CL-2297`). Parent `104.128.224.0/20`: `HOSTUS-IPV4-2`. | Public registry evidence does not establish UNSC's lease, subdelegation, or ownership. It also does not disprove a private lease. Provider delegation or contractual evidence remains necessary. |
+| `104.128.232.0/24` | ARIN exact-prefix record: `NET-104-128-232-0-1`, name `OVH-2`, active `ASSIGNMENT`, registrant CloudWish LLC (`CL-2297`). Parent `104.128.224.0/20`: `HOSTUS-IPV4-2`. | Operator confirmed on October 29, 2026 that UNSC leases this /24 through HostUS. This is operator-confirmed use, not independently verified contractual evidence or ownership. ARIN continues to identify CloudWish LLC as the exact-prefix registrant; the relationship between HostUS and that registration has not been independently established. |
 
 The /44 covers `2a06:9801:15d0::` through `2a06:9801:15df:ffff:ffff:ffff:ffff:ffff` (16 /48s). It does not contain the previously documented `2a06:9801:15c1::/48`; no replacement or surrender is inferred.
 
@@ -33,7 +33,7 @@ The /44 covers `2a06:9801:15d0::` through `2a06:9801:15df:ffff:ffff:ffff:ffff:ff
 
 No geofeed URL was present in the exact-prefix RIPE inet6num record or ARIN RDAP network record during this audit. The inspected RIPE /29 parent and ARIN /20 parent also contained no geofeed reference. A working public URL alone does not establish registry-based discovery or geolocation-provider ingestion. This audit does not claim an exhaustive search of every possible less-specific record or third-party feed index.
 
-The relevant authorized maintainer should publish the consumer URL in the RIPE /44's `geofeed:` attribute. For IPv4, first establish the operator's delegation with the provider, then arrange an appropriate registry geofeed reference through the authorized holder using the registry's supported mechanism. These registry changes have not been performed or verified.
+The relevant authorized maintainer should publish the consumer URL in the RIPE /44's `geofeed:` attribute. For IPv4, obtain supporting delegation evidence from HostUS and confirm which authorized holder can arrange an appropriate registry geofeed reference using the registry's supported mechanism. These registry changes have not been performed or verified.
 
 No prefix or geographic data was changed: no substantiated CSV error was found. No BGP advertisements, ROAs, IRR route objects, or operational configurations were modified.
 
